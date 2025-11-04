@@ -30,27 +30,27 @@ It converts high-level workflow descriptions into executable, efficient pipeline
 ## Project Structure
 ```bash
 datacody-agent/
-├── src/                          # Agent 后端核心代码
-│   ├── compiler/                 # 核心编译逻辑（Workflow Compiler Engine）
-│   ├── dsl/                      # 编译后的领域特定语言/IR (例如：抽象的 dbt Task)
-│   ├── agents/                   # AI 智能体推理与优化模块 (RAG 检索、LLM 工具调用逻辑)
-│   ├── tools/                    # MCP 工具调度（如 dbt-core 解析器、Great Expectations 集成）
-│   └── main.py                   # FastAPI 应用的启动入口
-├── vsc_extension/                # VS Code 插件前端代码 (TypeScript/JavaScript) - 关键的 MVP 交付物
-├── tests/                        # 单元测试与集成测试
-├── configs/                      # 配置文件 (.env, LLM 参数, YAML 模板等) - 关键的工程化实践
-├── data/                         # 示例 dbt 项目或测试数据
+├── src/                          # Core backend code for the Agent
+│   ├── compiler/                 # Core compilation logic (Workflow Compiler Engine)
+│   ├── dsl/                      # Domain-Specific Language / IR (e.g., abstract dbt Tasks)
+│   ├── agents/                   # AI reasoning and optimization modules (RAG retrieval, LLM tool calling logic)
+│   ├── tools/                    # MCP tool orchestration (e.g., dbt-core parser, Great Expectations integration)
+│   └── main.py                   # Entry point for the FastAPI application
+├── vsc_extension/                # VS Code extension frontend (TypeScript/JavaScript) - key MVP deliverable
+├── tests/                        # Unit and integration tests
+├── configs/                      # Configuration files (.env, LLM parameters, YAML templates, etc.) - key for engineering practice
+├── data/                         # Example dbt projects or test data
 └── requirements.txt
 └── README.md
 ````
 
-## 快速启动 (待完成)
+## Quick Start (To Be Completed)
 
-1.  **环境：** Clone 仓库，创建 Python 虚拟环境。
-2.  **API Key：** 配置 LLM API Key 到 `.env` 文件。
-3.  **运行后端：** `docker-compose up` (待编写) 或 `uvicorn src.main:app --reload`
-4.  **安装插件：** 编译 `vsc_extension` 并安装到本地 VS Code。
-5.  **Enjoy!** (待实现)  
+1. **Environment:** Clone the repository and create a Python virtual environment.
+2. **API Key:** Configure LLM API Key in the `.env` file.
+3. **Run Backend:** `docker-compose up` (to be implemented) or `uvicorn src.main:app --reload`
+4. **Install Extension:** Build `vsc_extension` and install it into local VS Code.
+5. **Enjoy!** (to be implemented)
 
 ---
 
