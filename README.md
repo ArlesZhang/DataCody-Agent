@@ -39,7 +39,7 @@ DataCody-Agent/
 ## Installation
 
 ```bash
-git clone https://github.com/Arles.Zhang/DataCody-Agent.git
+git clone https://github.com/ArlesZhang/DataCody-Agent.git
 cd DataCody-Agent
 pip install -r requirements.txt
 ```
