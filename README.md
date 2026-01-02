@@ -57,7 +57,7 @@ It converts high-level workflow descriptions into executable, efficient pipeline
 - **整体串联逻辑**：起点（产生）→ 处理/清洗（批/流 + Python + LLM增强）→ 存储（向量/云）→ 自动化生成（LLM全栈核心）→ 部署（生产化）→ 观测（LLMOps全程）。你的理解线性对，但需调整为“嵌入式 + 循环”（LLM全栈/LLMOps不是后置）。
 - **高正确率/可用性保障**：靠LLM全栈的微调/Agent（生成可靠输出） + LLMOps的实时评分/定位。
 - **你的项目锚点**：FuelGenius覆盖阶段1-4（燃料产生/清洗/增强），Cody Agent覆盖5-7（编译生成/部署/观测）。
-- **下一步**：建个小POC（Proof of Concept）：用Kafka模拟数据产生 → Spark清洗 → RAG增强 → LangSmith观测。花1周，串联起来就get到全貌了。
+- **MVP**：建个小POC（Proof of Concept）：用Kafka模拟数据产生 → Spark清洗 → RAG增强 → LangSmith观测。
 
 ---
 
