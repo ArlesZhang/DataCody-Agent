@@ -18,7 +18,7 @@ It converts high-level workflow descriptions into executable, efficient pipeline
 
 ## Tech stack
 
-* **Core Languages:** Python, TypeScript/JavaScript
+* **Core Languages:** Python, LLMOps
 * **Agent Frameworks:** LangChain / LlamaIndex
 * **Backend Services:** FastAPI, Uvicorn
 * **Deployment/Containerization:** Docker
